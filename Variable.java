@@ -1,3 +1,5 @@
+import java.util.zip.CRC32C;
+
 public class Variable { //การนิยามตัวแปร
     public static void main(String[] args) {
         //Global variable
@@ -28,6 +30,20 @@ public class Variable { //การนิยามตัวแปร
         //ค่าค่า min max int long float double
         System.out.println("ค่าต่ำสุด int = "+Integer.MIN_VALUE); 
         System.out.println("ค่าสูงสุด int = "+Integer.MAX_VALUE);
+
+        //check!!
+        int aa;
+        double bb;
+        String cc = "Hello";
+        boolean d;
+        char e;
+        float f;
+
+        //true = yes, false = no
+        boolean result = cc instanceof String;
+        System.out.println("Check = "+result);
+
+    
 
     }
 }
