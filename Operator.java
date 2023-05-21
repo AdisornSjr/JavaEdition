@@ -13,5 +13,16 @@ public class Operator {
         System.out.println(a*b);
         System.out.println(a/b);
         System.out.println(a%b);
+
+        //compare
+        int A=10,B=5;
+
+        System.out.println(A==B);
+        System.out.println(A!=B);
+        System.out.println(A>B);
+        System.out.println(A<B);
+
+        //&& || ! and or not
+
     }
 }
