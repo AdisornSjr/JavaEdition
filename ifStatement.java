@@ -22,7 +22,7 @@ public class ifStatement{
                 System.out.println("3");
             }
         }else{
-            System.out.println("ปลาย);
+            System.out.println("ปลาย");
         }
     }
 }
