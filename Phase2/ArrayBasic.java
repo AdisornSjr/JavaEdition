@@ -1,14 +1,21 @@
+
 public class ArrayBasic {
     public static void main(String[] args) {
-        int[] number=new int[4]; //แบบกำหนดขนาด
+       int[]num = new int[4];//กำหนดขนาดเอาไว้
 
-        //กำหนดค่า
-        number[0] = 1;
-        number[1] = 2;
-        number[2] = 3;
-        number[3] = 4;
+        //กำหนดค่าลงไป
+        num[0] = 1;
+        num[1] = 2;
+        num[2] = 3;
+        num[3] = 4;
 
-        System.out.println(number);
+        System.out.print(num[1]); 
+
+        int []hope = {0,1,2,3,4}; //แบบสมาชิก
+        System.out.println(hope.length);
+
+    
     }
     
+     
 }
