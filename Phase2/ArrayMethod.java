@@ -13,8 +13,26 @@ public class ArrayMethod {
         //compare
         int[]A = {1,2,3,4,5};
         int[]B = {1,2,3,4,5};
+        
 
         System.out.println("Result of compare is = "+compareArrray(A, B));
+        
+        //swap
+        System.out.print("Array A is = ");
+        display(A);
+        SwapArr(A, 0, 2);
+        System.out.print("Swap A is = ");
+        display(A);
+
+        //copy return array
+        //USE A[] then return C[]
+        int C[] = coppyArr(A);
+        System.out.print("Copy A to C is = ");
+        display(C);
+
+        //find the number in array 
+        System.out.println(findElement(A, 4));
+        
         
          
     }
@@ -23,6 +41,13 @@ public class ArrayMethod {
         for(int i=0;i<arr.length;i++){
             System.out.println("ลำดับที่ "+i+" ค่า = "+arr[i]);
         }
+    }
+    //show array
+    static void display(int []arr){
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i]);
+        }
+        System.out.println();
     }
     //method array that return
     static int findMaxInArray(int []arr){
@@ -61,4 +86,36 @@ public class ArrayMethod {
         }
         return true;
     }
+
+    //swap
+    static void SwapArr(int []a,int x,int y){
+        //x is start
+        //y is end
+        
+        int temp = a[x]; // เก็บไว้ก่อน
+        a[x] = a[y];
+        a[y] = temp;
+
+    }
+    //method array return
+    static int [] coppyArr(int []a){
+        //free space array that equal the same
+        int []newArr = new int[a.length];
+        for(int i=0;i<a.length;i++){
+            newArr[i] = a[i];
+        }
+        return newArr; //return in array
+    }
+
+    //find number in array
+    static int findElement(int []arr,int NUMBER){
+        for(int i=0;i<arr.length;i++){
+            if(arr[i] == NUMBER){ //can use .equal ==
+                return i;
+            }
+        }
+        return -1;
+    }
+
+
 }
